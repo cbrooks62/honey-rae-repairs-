@@ -10,7 +10,6 @@ export const EmployeeDetails = () => {
   useEffect(() => {
     getEmployeeByUserId(employeeId).then((data) => {
       const employeeObj = data[0];
-      console.log(employeeObj)
       setEmployee(employeeObj);
     });
   }, [employeeId]);
